@@ -10,7 +10,7 @@ public class RunnableMain {
 		MyRunnable task = new MyRunnable();
 		Thread thread = new Thread(task, "Thread-1");
 		thread.start();
-		thread.join();  //
+		thread.join();
 		int result = task.value;
 		log("result value = " + result);
 	}
